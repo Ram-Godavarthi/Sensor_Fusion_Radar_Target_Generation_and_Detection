@@ -1,9 +1,12 @@
 # Sensor_Fusion_Radar-Target-Generation-and-Detection
 
+(Images/Radar_Project_Layout.PNG)
 
 **FMCW Waveform Design**
 - Configure the FMCW waveform based on the system requirements.
 - Using the given system requirements, design a FMCW waveform. Find its Bandwidth (B), chirp time (Tchirp) and slope of the chirp.
+
+(Images/Radar_Requirements.png)
 
 **Simulation loop**
 - Define the range and velocity of target and simulate its displacement.
@@ -24,10 +27,16 @@ initial position of target assigned with an error margin of +/- 10 meters.
 - Keep one half of the signal
 - Plot the output
 - There should be a peak at the initial position of the target
+
+(Images/Range.png)
 - The 2nd FFT will generate a Range Doppler Map as seen in the image below and it will be given by variable ‘RDM’. 
+
+(Images/2D FFT.png)
 - Next task is to implement the CFAR on this Range Doppler Map.
 
 **2D CFAR**
+
+(Images/CFAR.png)
 - Towards the end, perform the CFAR processing on the output of 2nd FFT to display the target.
 - The 2D CFAR processing should be able to suppress the noise and separate
 the target signal. The output should match the image shared in walkthrough.
